@@ -1,0 +1,23 @@
+{
+  "extends": "@tsconfig/react-native/tsconfig.json",
+  "compilerOptions": {
+    "strict": true,
+
+    "baseUrl": ".",
+
+    "types": ["jest"],
+
+    "typeRoots": ["./src/types"],
+
+    "paths": {
+      "~/*": ["src/*"]
+    },
+
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*",
+    "**/*.spec.ts",
+    "**/*.test.ts"
+  ],
+}
